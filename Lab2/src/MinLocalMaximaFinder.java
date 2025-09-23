@@ -1,3 +1,5 @@
+import java.io.*;
+
 public class MinLocalMaximaFinder {
     // FindMinLocalMax
     // Searches for the minimum among all local maxima in an integer matrix.
@@ -10,6 +12,10 @@ public class MinLocalMaximaFinder {
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
+                if (IsLocalMax(matrix, i, j)){
+                    System.out.println(matrix[i][j]);
+                }
+
                 if (IsLocalMax(matrix, i, j) && matrix[i][j] < minVal) {
                     minVal = matrix[i][j];
                 }

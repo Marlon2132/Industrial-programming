@@ -10,7 +10,7 @@ public class Main {
         File fInt = new File(intFile);
 
         if (!fInt.exists() || !fInt.isFile()) {
-            System.err.println("Error: file not found — " + intFile);
+            System.err.println("Error: file not found - " + intFile);
             return;
         }
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.marlon2132.cw_2.CW_Controller" spacing="10" alignment="TOP_LEFT">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Выберите поздравителей (можно несколько):"/>
+    <HBox spacing="15" alignment="TOP_LEFT">
+        <VBox fx:id="congrBox" spacing="5" prefWidth="200"/>
+        <VBox spacing="5">
+            <Label text="Подарки (для выбранных поздравителей)"/>
+            <ListView fx:id="giftList" prefWidth="320" prefHeight="140" />
+        </VBox>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER_LEFT">
+        <VBox spacing="5">
+            <Label text="Нужен концерт?"/>
+            <HBox spacing="10">
+                <RadioButton fx:id="concertYes" text="Да" />
+                <RadioButton fx:id="concertNo" text="Нет" selected="true"/>
+            </HBox>
+        </VBox>
+
+        <VBox spacing="5">
+            <Label text="Постоянный клиент (скидка 10%)"/>
+            <CheckBox fx:id="loyalClient"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button text="Загрузить конфиг" onAction="#onLoadConfig"/>
+        <Button text="Добавить в заказ" onAction="#onAddToOrder"/>
+        <Button text="Очистить заказ" onAction="#onClearOrder"/>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER_LEFT">
+        <VBox spacing="5">
+            <Label text="Итоговая стоимость:"/>
+            <Label fx:id="priceLabel" text="0.00"/>
+        </VBox>
+
+        <VBox spacing="5" prefWidth="420">
+            <Label text="Состав заказа:"/>
+            <TextArea fx:id="orderArea" prefRowCount="8" wrapText="true"/>
+        </VBox>
+    </HBox>
+</VBox>

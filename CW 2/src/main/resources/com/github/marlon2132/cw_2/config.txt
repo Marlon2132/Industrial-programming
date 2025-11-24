@@ -1,0 +1,24 @@
+concert_price=500
+
+[Company:Apple]
+Gift:iPhone_15=1200
+Gift:AirPods777=200
+Gift:GiftCardAppStore=50
+
+[Company:Коммунарка]
+Gift:Шоколадка Алёнка=25
+Gift:Конфета с ликёром=60
+
+[Company:OZ]
+Gift:Энциклопедия=15
+Gift:Букварь=40
+
+[Company:Семь пятниц]
+Gift:Коньяк=300
+Gift:Водка=200
+
+[Company:Huawei]
+Gift:Honor 9X=6000
+Gift:Honor AX=9140
+Gift:Huawei Pro 9=3524
+Gift:Honor 24=15345

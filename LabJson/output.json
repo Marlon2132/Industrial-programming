@@ -1,0 +1,79 @@
+{
+  "students": [
+    {
+      "fullName": "Трофимов Станислав Сергеевич",
+      "course": 2,
+      "group": 7,
+      "averageAll": 9.0,
+      "sessions": [
+        {
+          "sessionNumber": 1,
+          "average": 9.0,
+          "disciplines": [
+            {
+              "name": "Аналитическая геометрия",
+              "type": "Credit",
+              "result": "Зачтено"
+            },
+            {
+              "name": "История белорусской государственности",
+              "type": "Exam",
+              "result": 9
+            }
+          ]
+        },
+        {
+          "sessionNumber": 2,
+          "average": 9.0,
+          "disciplines": [
+            {
+              "name": "Математический анализ",
+              "type": "Exam",
+              "result": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fullName": "Ожигин Антон Сергеевич",
+      "course": 2,
+      "group": 7,
+      "averageAll": 9.333333333333334,
+      "sessions": [
+        {
+          "sessionNumber": 1,
+          "average": 9.5,
+          "disciplines": [
+            {
+              "name": "Аналитическая геометрия",
+              "type": "Credit",
+              "result": "Зачтено"
+            },
+            {
+              "name": "История белорусской государственности",
+              "type": "Exam",
+              "result": 10
+            },
+            {
+              "name": "Программирование",
+              "type": "Exam",
+              "result": 9
+            }
+          ]
+        },
+        {
+          "sessionNumber": 2,
+          "average": 9.0,
+          "disciplines": [
+            {
+              "name": "Математический анализ",
+              "type": "Exam",
+              "result": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="8.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.marlon2132.studentsorttask.StudentController">
+    <HBox spacing="8.0">
+        <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+        </padding>
+
+        <!-- Добавлены fx:id, onAction оставлены -->
+        <Button fx:id="loadFileButton" onAction="#onLoadFile" text="Загрузить файл" />
+        <Label text="Сортировать:" />
+        <ChoiceBox fx:id="sortChoice" />
+        <Button fx:id="applySort" onAction="#onApplySort" text="Применить" />
+    </HBox>
+
+    <HBox spacing="8.0">
+        <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+        </padding>
+        <TextField fx:id="searchNumber" promptText="По номеру" />
+        <TextField fx:id="searchName" promptText="По имени" />
+        <TextField fx:id="searchGroup" promptText="По группе" />
+        <TextField fx:id="searchGrade" promptText="По баллу" />
+    </HBox>
+
+    <TableView fx:id="table" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="numberCol" text="Номер" />
+            <TableColumn fx:id="nameCol" text="Имя" />
+            <TableColumn fx:id="groupCol" text="Группа" />
+            <TableColumn fx:id="gradeCol" prefWidth="114.99998474121094" text="Средний балл" />
+        </columns>
+    </TableView>
+</VBox>
